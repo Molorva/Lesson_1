@@ -1,4 +1,4 @@
-package pract.impl.impl;
+package pract.impl;
 
 public enum Packege {
     PLASTIC("пластик"), GLASS("стекло"), POLYETILEN("Полиэтилен");

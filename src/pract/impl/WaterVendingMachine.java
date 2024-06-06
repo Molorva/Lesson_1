@@ -1,4 +1,4 @@
-package pract.impl.impl;
+package pract.impl;
 
 import pract.Product;
 import pract.VendingMachine;
@@ -12,4 +12,5 @@ public class WaterVendingMachine extends VendingMachine {
 
     public WaterVendingMachine() {
     }
+
 }

@@ -1,4 +1,4 @@
-package pract.impl.impl;
+package pract.impl;
 import pract.Main;
 import pract.Product;
 
@@ -13,7 +13,7 @@ public class BottleOfWater extends Product {
         super(name, price, releaseDate);
         this.isSpark = false;
         this.volume = 0;
-        this.pack = Main.Packege.PLASTIC.getMaterial();
+        this.pack = Packege.PLASTIC.getMaterial();
     }
 
     public BottleOfWater(String name, double price, LocalDate releaseDate, boolean isSpark, String  pack, float volume) {
@@ -37,12 +37,12 @@ public class BottleOfWater extends Product {
 
     @Override
     public String toString() {
-        return "pract.impl.BottleOfWater{" +
+        return "BottleOfWater{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", releaseDate=" + releaseDate +
-                "volume=" + volume +
-                ", pack='" + pack + '\'' +
+                "volume=" + volume + '\'' +
+                ", pack='" + pack +
                 ", isSpark=" + isSpark +
                 '}';
     }

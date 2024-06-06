@@ -14,6 +14,9 @@ public class Product {
         this.releaseDate = releaseDate;
     }
 
+    public Product() {
+    }
+
     public void setPrice(double price) {
         this.price = price;
     }
@@ -32,7 +35,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "pract.impl.pract.Product{" +
+        return "Product{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", releaseDate=" + releaseDate +

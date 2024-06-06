@@ -3,7 +3,7 @@ package pract;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VendingMachine {
+public abstract class VendingMachine {
     private List<Product> products;
 
     public VendingMachine(List<Product> products) {
