@@ -1,7 +1,7 @@
 package pract.impl;
 import pract.Product;
+
 import java.time.LocalDate;
-import java.util.List;
 
 public class HotDrink extends Product {
     private float volume;

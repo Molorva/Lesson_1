@@ -2,6 +2,7 @@ package pract.impl;
 
 import pract.Product;
 import pract.VendingMachine;
+
 import java.util.List;
 
 public class HotDrinkVendingMachine extends VendingMachine {
@@ -11,12 +12,14 @@ public class HotDrinkVendingMachine extends VendingMachine {
 
     public HotDrinkVendingMachine() {
     }
+
     public Product getProduct(String name, float volume, int temperature) {
         List<Product> products = getProducts();
         for (Product product : products) {
-            if (product.getName().equals(name) &&
-                    product.getVolume().equals(volume) &&
-                    product.getTemperature().equals(temperature)) {
+            HotDrink product1 = (HotDrink) product;
+            if (product1.getName().equals(name) &&
+                    product1.getVolume() == volume &&
+                    product1.getTemperature() == temperature) {
                 Product result = product;
                 products.remove(product);
                 return result;

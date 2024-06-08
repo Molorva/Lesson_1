@@ -2,7 +2,7 @@ package pract;
 
 import java.time.LocalDate;
 
-public class Product {
+public  abstract class Product {
     protected String name;
     protected double price;
     protected LocalDate releaseDate;

@@ -19,16 +19,18 @@ public abstract class VendingMachine {
     }
 
     public Product getProduct(String name){
-        for (Product product : products) {
-            if(product.getName().equals(name)){
-                Product result = product;
-                products.remove(product);
-                return result;
+        {
+            for (Product product : getProducts()) {
+                if(product.getName().equals(name)){
+                    Product result = product;
+                    getProducts().remove(product);
+                    return result;
+                }
             }
+            System.out.println("No such product: " + name);
+            return null;
         }
-        System.out.println("No such product: " + name);
-        return null;
-    }
+    };
 
     public List<Product> getProducts() {
         return products;
